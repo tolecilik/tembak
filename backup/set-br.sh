@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/berassuper/tembak/main/backup"
+akbarvpn="raw.githubusercontent.com/tolecilik/tembak/main/backup"
 
 apt install rclone -y
 printf "q\n" | rclone config
@@ -36,18 +36,18 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user bckupvpns@gmail.com
-from bckupvpns@gmail.com
-password Yangbaru1 
+user mulungweb2020@gmail.com
+from mulungweb2020@gmail.com
+password Maskurniawan123 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/berassuper/tembak/main/backup/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/berassuper/tembak/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/berassuper/tembak/main/backup/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/berassuper/tembak/main/backup/strt.sh"
-wget -O limitspeed "https://raw.githubusercontent.com/berassuper/tembak/main/backup/limitspeed.sh"
+wget -O autobackup "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/strt.sh"
+wget -O limitspeed "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/limitspeed.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
