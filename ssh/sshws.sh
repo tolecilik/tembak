@@ -38,7 +38,7 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 if [[ ! -z "${PID}" ]]; then
 echo "Already ON !"
 else
-wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/tolecilik/v6/main/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler && /usr/bin/ssh-wsenabler
+wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler && /usr/bin/ssh-wsenabler
 systemctl daemon-reload >/dev/null 2>&1
 systemctl enable sshws.service >/dev/null 2>&1
 systemctl start sshws.service >/dev/null 2>&1
