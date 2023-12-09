@@ -275,7 +275,7 @@ else
     fi
 clear
 echo -e "╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕${NC}" | lolcat
-echo -e "║ \E[37;1;36m          ★ 𝐁𝐑𝐈𝐍𝐆𝐀𝐒 𝐓𝐔𝐍𝐍𝐄𝐋 ★            \E[0m"
+echo -e "║ \E[37;1;36m          ★ EXCEL 𝐓𝐔𝐍𝐍𝐄𝐋 ★            \E[0m"
 echo -e "╘━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╛${NC}" | lolcat
 echo -e "║ [ SSH : $status_ws_epro ] [ X-RAY : $status_ss ] [ NGINX : $status_nginx ]" | lolcat
 echo -e "║\e[1;33m╒━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╕\033[0m"
