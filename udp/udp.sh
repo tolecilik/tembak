@@ -10,7 +10,7 @@ sleep 4
 echo " install UDP-CUSTOM........" | lolcat
 sleep 4
 clear
-echo "BRINGAS MELUNCUR GAYS........" | lolcat
+echo "MASKURNAIWAN MELUNCUR GAYS........" | lolcat
 clear
 wget -q --show-progress --load-cookies /tmp/cookies.txt "https://gitlab.com/Exe302/Tunnel/-/raw/main/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /root/udp/udp-custom
