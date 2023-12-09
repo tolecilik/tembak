@@ -1,6 +1,6 @@
 # SC MULTI PORT BOSS
 
-# 
+# X-X 
 
 # Update For Os Ubuntu Linux
 <pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot</code></pre>
