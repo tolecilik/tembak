@@ -1,5 +1,8 @@
 # SC MULTI PORT BOSS
 
+# jangan lupa Add ip vps
+<pre><code>https://github.com/tolecilik/permission</code></pre>
+
 # Update For Os Ubuntu Linux
 <pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot</code></pre>
 
