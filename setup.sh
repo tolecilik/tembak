@@ -216,7 +216,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ BRINGAS FAMILY ]-===================="
+echo "=====================-[ EXCEL FAMILY ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -257,7 +257,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[  BRINGASS TUNNEL ]-==============="
+echo "===============-[  EXCEL TUNNEL ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
