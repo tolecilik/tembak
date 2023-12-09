@@ -11,11 +11,11 @@ rm -rf backup
 rm -rf restore
 # mendowload ulang
 
-wget https://raw.githubusercontent.com/berassuper/tembak/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu.sh" && chmod +x /usr/bin/menu
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/berassuper/tembak/main/backup/menu-backup.sh" && chmod +x /usr/bin/menu-backup
-wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/berassuper/tembak/main/backup/backup.sh" && chmod +x /usr/bin/backup
-wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/berassuper/tembak/main/backup/restore.sh" && chmod +x /usr/bin/restore
+wget https://raw.githubusercontent.com/tolecilik/tembak/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu.sh" && chmod +x /usr/bin/menu
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/menu-backup.sh" && chmod +x /usr/bin/menu-backup
+wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/backup.sh" && chmod +x /usr/bin/backup
+wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/tolecilik/tembak/main/backup/restore.sh" && chmod +x /usr/bin/restore
 echo -e " [INFO] Update Successfully"
 sleep 2
 exit
