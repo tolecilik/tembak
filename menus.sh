@@ -49,7 +49,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS iptembak.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/berassuper/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/tolecilik/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -67,7 +67,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/berassuper/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/tolecilik/permission/main/ipmini | grep $MYIP | awk '{print $3}')
 fi
 
 # // Exporting Language to UTF-8
