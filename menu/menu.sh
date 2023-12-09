@@ -273,7 +273,7 @@ MYIP=$(curl -sS iptembak.icanhazip.com)
 clear   
      echo -e " ${w}${NC}"
                     echo -e "         ┌───────────────────────────────────────────┐"
-		    echo -e "         |${GB}              MASKURNAIWAN TUNNEL              ${NC}" "|"
+		    echo -e "         |${GB}              EXCEL TUNNEL              ${NC}" "|"
 		    echo -e "         └───────────────────────────────────────────┘"
                     echo -e "         │ ${c} IP VPS  : $IPVPS ${NC}"
                     echo -e "         │ ${c} CPU     : $cpu_usage ${NC}"  
