@@ -9,7 +9,7 @@
 
 
 
-![This is an image](https://raw.githubusercontent.com/berassuper/tembak/main/istockphoto-1171128589-640x640.jpg)
+![This is an image](https://raw.githubusercontent.com/tolecilik/tembak/main/istockphoto-1171128589-640x640.jpg)
 #BACKUP
 <pre><code>wget https://raw.githubusercontent.com/berassuper/tembak/main/update.sh && chmod +x update.sh && ./update.sh
 
