@@ -36,7 +36,7 @@ figlet "backup"
 backup
 echo "--------------------------------------------------------"
 echo
-echo "${Green}Terimakasih sudah menggunakan layanan script Bringas-family"
+echo "${Green}Terimakasih sudah menggunakan layanan script Maskurniawan"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -47,7 +47,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "${Green}Terimakasih sudah menggunakan layanan script Bringas-family"
+echo "${Green}Terimakasih sudah menggunakan layanan script Maskurniawan"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -57,7 +57,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "${Green}Terimakasih sudah menggunakan layanan script bringas-family"
+echo "${Green}Terimakasih sudah menggunakan layanan script Maskurniawan"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -66,7 +66,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "${Green}Terimakasih sudah menggunakan layanan script Bringas-family"
+echo "${Green}Terimakasih sudah menggunakan layanan script Maskurniawan"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -76,7 +76,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "${Green}Terimakasih sudah menggunakan layanan script Bringas-family"
+echo "${Green}Terimakasih sudah menggunakan layanan script Maskurniawan"
 echo
 echo "--------------------------------------------------------"
 fi
