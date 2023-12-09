@@ -15,5 +15,5 @@
 <pre><code>wget https://raw.githubusercontent.com/toleclik/tembak/main/update.sh && chmod +x update.sh && ./update.sh
 
 ![This is an image]
-# Sc By berassuper
+# Sc By hamba allah
 <pre><code> wget https://raw.githubusercontent.com/toleclik/tembak/main/up.sh && chmod +x up.sh && ./up.sh
