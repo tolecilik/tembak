@@ -20,7 +20,7 @@ commonname=none
 email=adamspx17@gmail.com
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/berassuper/tembak/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -128,13 +128,13 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -243,7 +243,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/berassuper/tembak/main/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/tolecilik/tembak/main/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
@@ -271,62 +271,62 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/menu-trial.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/berassuper/tembak/main/menu-vless.sh"
-wget -O running "https://raw.githubusercontent.com/berassuper/tembak/main/menu/running.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/tolecilik/tembak/main/menu-vless.sh"
+wget -O running "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/clearcache.sh"
-wget -O menu-trgo "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-trojan.sh"
+wget -O menu-trgo "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-trgo.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-trojan.sh"
 
 # menu ssh ovpn
-wget -O menu-sshh "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-sshh.sh"
-wget -O usernew "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/delete.sh"
-wget -O autokilll "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/autokilll.sh"
-wget -O ceklim "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/tendang.sh"
-wget -O user-lock "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/user-lock.sh"
-wget -O user-unlock "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/user-unlock.sh"
+wget -O menu-sshh "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-sshh.sh"
+wget -O usernew "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/trial.sh"
+wget -O renew "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/renew.sh"
+wget -O hapus "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/hapus.sh"
+wget -O cek "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/cek.sh"
+wget -O member "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/member.sh"
+wget -O delete "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/delete.sh"
+wget -O autokilll "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/autokilll.sh"
+wget -O ceklim "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/tendang.sh"
+wget -O user-lock "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/user-unlock.sh"
 
 # menu system
-wget -O menu-set "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-set.sh"
-wget -O menu-domain "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/berassuper/tembak/main/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/berassuper/tembak/main/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/berassuper/tembak/main/menu/menu-webmin.sh"
-wget -O speedtest "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/speedtest_cli.py"
+wget -O menu-set "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-set.sh"
+wget -O menu-domain "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-domain.sh"
+wget -O add-host "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/add-host.sh"
+wget -O port-change "https://raw.githubusercontent.com/tolecilik/tembak/main/port/port-change.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/tolecilik/tembak/main/xray/certv2ray.sh"
+wget -O menu-webmin "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/menu-webmin.sh"
+wget -O speedtest "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/speedtest_cli.py"
 wget -O about "https://raw.githubusercontent.com/Fikripps/Ver3/main/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/berassuper/tembak/main/menu/auto-reboot.sh"
-wget -O restarts "https://raw.githubusercontent.com/berassuper/tembak/main/menu/restarts.sh"
-wget -O bw "https://raw.githubusercontent.com/berassuper/tembak/main/menu/bw.sh"
+wget -O auto-reboot "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/auto-reboot.sh"
+wget -O restarts "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/restarts.sh"
+wget -O bw "https://raw.githubusercontent.com/tolecilik/tembak/main/menu/bw.sh"
 
 
 # change port
-wget -O port-ssl "https://raw.githubusercontent.com/berassuper/tembak/main/port/port-ssl.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/berassuper/tembak/main/port/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/tolecilik/tembak/main/port/port-ssl.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/tolecilik/tembak/main/port/port-ovpn.sh"
 
 
-wget -O xp "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/berassuper/tembak/main/acs-set.sh"
+wget -O xp "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/xp.sh"
+wget -O acs-set "https://raw.githubusercontent.com/tolecilik/tembak/main/acs-set.sh"
 
-wget -O sshws "https://raw.githubusercontent.com/berassuper/tembak/main/ssh/sshws.sh"
-wget -O status "https://raw.githubusercontent.com/berassuper/tembak/main/status.sh"
+wget -O sshws "https://raw.githubusercontent.com/tolecilik/tembak/main/ssh/sshws.sh"
+wget -O status "https://raw.githubusercontent.com/tolecilik/tembak/main/status.sh"
 # backup
-wget -O menu-backup "https://raw.githubusercontent.com/berassuper/v5/main/backup/menu-backup.sh"
-wget -O backup "https://raw.githubusercontent.com/berassuper/v5/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/berassuper/v5/main/backup/restore.sh"
-wget -O genssl "https://raw.githubusercontent.com/berassuper/v5/main/backup/genssl.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/tolecilik/v5/main/backup/menu-backup.sh"
+wget -O backup "https://raw.githubusercontent.com/tolecilik/v5/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/tolecilik/v5/main/backup/restore.sh"
+wget -O genssl "https://raw.githubusercontent.com/tolecilik/v5/main/backup/genssl.sh"
 # reboot & update
-wget -O jam "https://raw.githubusercontent.com/berassuper/tembak/main/jam.sh"
-wget -O up "https://raw.githubusercontent.com/berassuper/tembak/main/up.sh"
+wget -O jam "https://raw.githubusercontent.com/tolecilik/tembak/main/jam.sh"
+wget -O up "https://raw.githubusercontent.com/tolecilik/tembak/main/up.sh"
 
 chmod +x menu
 chmod +x menu-trial
